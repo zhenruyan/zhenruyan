@@ -211,8 +211,8 @@ jobs:
           path: './metrics/'
       - name: 'Publish'
         run: |
-          git config --global user.name 'hectorm-bot'
-          git config --global user.email 'noreply@molinero.dev'
+          git config --global user.name 'zhenruyan-bot'
+          git config --global user.email 'baiyangwangzhan@hotmail.com'
           if [ -n "$(git status --porcelain=v1 ./metrics/)" ]; then
             git add ./metrics/
             git commit -m "[skip ci] Metrics $(date -Iseconds)"
